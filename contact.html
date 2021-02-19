@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact</title>
+	<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<script src="write.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+	<nav role="navigation">
+  		<div id="menuToggle">
+    		<input type="checkbox" />
+    		<span></span>
+    		<span></span>
+    		<span></span>
+    		<ul id="menu">
+      			<a href="index.html"><li>Home</li></a>
+      			<a href="about.html"><li>About</li></a>
+      			<a href="contact.html"><li>Contact</li></a>
+    		</ul>
+  		</div>
+	</nav>
+	<form class="contactForm">
+		<label for="name">Full Name:</label>
+		<input type="text" name="name" id="signature" class="signature">
+			
+		<div>What type of mail is it?</div>
+		<label><input type="radio" id="choice1" name="type" value="Let's Get Down to Business" checked> Business</label>
+		<label><input type="radio" id="choice2" name="type" value="Heyyy Buddy(:"> Pleasure</label>
+		<br><br>
+		<label for="message" class="message">What's up?</label> 
+		<textarea type="text" name="mail" id="mail" class="mail" maxlength="140"></textarea>
+			<br>
+	</form>
+	<br>
+	<input type="submit" value="Send mail"  class="send" onclick="sendMail();">
+</body>
+</html>
